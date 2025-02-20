@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+
+main {
+    background: linear-gradient(157deg, rgba(2, 0, 36, 1) 28%, rgba(0, 212, 255, 1) 100%);
+}
+
+.calculator {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.calculator__display {
+    width: 40%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(315deg, rgba(2, 0, 36, 1) 28%, rgba(0, 212, 255, 1) 100%);
+    border-radius: 30px;
+    color: floralwhite;
+}
+
+button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: floralwhite;
+    color: black;
+}
