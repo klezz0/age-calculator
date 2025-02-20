@@ -1,6 +1,5 @@
 const resultElement = document.getElementById('result');
 const inputElement = document.getElementById('birthdate');
-console.log(resultElement);
 
 document.getElementById('calculate').addEventListener('click', function () {
     const birthdateInput = inputElement.value;
