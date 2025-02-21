@@ -1,16 +1,21 @@
 const resultElement = document.getElementById('result');
 const inputElement = document.getElementById('birthdate');
-function setColorRed(){
-    document.getElementsByClassName('calculator__display')[0].style.background = 'linear-gradient(315deg, rgba(0,0,0,1) 16%, rgba(255,0,0,1) 100%)'
-    document.getElementsByClassName('main')[0].style.background = 'linear-gradient(147deg, rgba(0,0,0,1) 16%, rgba(255,0,0,1) 100%)'
+const calculatorElement = document.getElementsByClassName('calculator__display')[0];
+const mainElement = document.getElementsByClassName('main')[0];
+
+function setColorRed() {
+    calculatorElement.style.background = 'linear-gradient(315deg, rgba(0,0,0,1) 16%, rgba(255,0,0,1) 100%)'
+    mainElement.style.background = 'linear-gradient(147deg, rgba(0,0,0,1) 16%, rgba(255,0,0,1) 100%)'
 }
-function setColorBlue(){
-    document.getElementsByClassName('calculator__display')[0].style.background = 'linear-gradient(315deg, rgba(2, 0, 36, 1) 28%, rgba(0, 212, 255, 1) 100%)'
-    document.getElementsByClassName('main')[0].style.background = 'linear-gradient(157deg, rgba(2, 0, 36, 1) 28%, rgba(0, 212, 255, 1) 100%)'
+
+function setColorBlue() {
+    calculatorElement.style.background = 'linear-gradient(315deg, rgba(2, 0, 36, 1) 28%, rgba(0, 212, 255, 1) 100%)'
+    mainElement.style.background = 'linear-gradient(157deg, rgba(2, 0, 36, 1) 28%, rgba(0, 212, 255, 1) 100%)'
 }
-function setColorYellow(){
-    document.getElementsByClassName('calculator__display')[0].style.background = 'linear-gradient(315deg, rgba(0,0,0,1) 16%, rgba(209,255,0,1) 100%)'
-    document.getElementsByClassName('main')[0].style.background = 'linear-gradient(158deg, rgba(0,0,0,1) 16%, rgba(209,255,0,1) 100%)'
+
+function setColorYellow() {
+    calculatorElement.style.background = 'linear-gradient(315deg, rgba(0,0,0,1) 16%, rgba(209,255,0,1) 100%)'
+    mainElement.style.background = 'linear-gradient(158deg, rgba(0,0,0,1) 16%, rgba(209,255,0,1) 100%)'
 }
 
 document.getElementById('calculate').addEventListener('click', function () {
