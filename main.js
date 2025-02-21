@@ -10,7 +10,7 @@ function ChangeColorNormal(){
 }
 function ChangeColorStrange(){
     document.getElementsByClassName('calculator__display')[0].style.background = 'linear-gradient(315deg, rgba(0,0,0,1) 16%, rgba(209,255,0,1) 100%)'
-    document.getElementsByClassName('main')[0].style.background = 'linear-gradient(157deg, rgba(0,0,0,1) 16%, rgba(209,255,0,1) 100%)'
+    document.getElementsByClassName('main')[0].style.background = 'linear-gradient(158deg, rgba(0,0,0,1) 16%, rgba(209,255,0,1) 100%)'
 }
 
 document.getElementById('calculate').addEventListener('click', function () {
