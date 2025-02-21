@@ -8,6 +8,10 @@ function ChangeColorNormal(){
     document.getElementsByClassName('calculator__display')[0].style.background = 'linear-gradient(315deg, rgba(2, 0, 36, 1) 28%, rgba(0, 212, 255, 1) 100%)'
     document.getElementsByClassName('main')[0].style.background = 'linear-gradient(157deg, rgba(2, 0, 36, 1) 28%, rgba(0, 212, 255, 1) 100%)'
 }
+function ChangeColorStrange(){
+    document.getElementsByClassName('calculator__display')[0].style.background = 'linear-gradient(315deg, rgba(0,0,0,1) 16%, rgba(209,255,0,1) 100%)'
+    document.getElementsByClassName('main')[0].style.background = 'linear-gradient(157deg, rgba(0,0,0,1) 16%, rgba(209,255,0,1) 100%)'
+}
 
 document.getElementById('calculate').addEventListener('click', function () {
     const birthdateInput = inputElement.value;
@@ -23,13 +27,14 @@ document.getElementById('calculate').addEventListener('click', function () {
         }
 
         if (age > 200) {
-            resultElement.textContent = 'Да, да, кому ты мелишь?'
+            resultElement.textContent = 'Да, да, кому ты мелишь?';
             ChangeColor();
             return;
         }
 
         if (age > 122) {
             resultElement.textContent = 'Средняя продолжительность жизни 70 лет (переделывай)';
+            ChangeColorStrange();
             return;
         }
 
